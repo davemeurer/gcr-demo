@@ -25,6 +25,6 @@ steps:
 secrets:
 - kmsKeyName: projects/eng-dev/locations/global/keyRings/hubCredentialsKeyRing/cryptoKeys/hubCredentialsCryptoKey
   secretEnv:
-    BD_HUB_PASSWORD: CiQASU9vrwsGNuq0kDvb8YeOgZR9fDA7lALtzFOMyg2kIs5og5gSMwACoRK7D6dg5vncTAoUMYXgYXHVKc6JX+u+nOFpoFzWTK13VXcrHgGrr4c/ONcSE/VCww==
+    BD_HUB_PASSWORD: CiQASU9vr+9GU/2j+07d0106R9MMY9XIEU4JBYmSaueLViaJ69sSMQACoRK7JrebFjpcEQ6vaMKp7nfzB9nMOba3mISPTo3nljSLQ4okq1rcaJHi+uV1KCU=
 images:
 - us.gcr.io/$PROJECT_ID/containerbuilder/demo

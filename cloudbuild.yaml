@@ -1,7 +1,7 @@
 steps:
 - name: gcr.io/cloud-builders/docker
   args: [ 'build', '-t', 'us.gcr.io/$PROJECT_ID/gcr-demo', '.' ]
-- name: launcher.gcr.io/blackduck-public/blackducksoftware-containerbuilder-scanner:latest
+- name: gcr.io/blackduck-public/blackduck-scanner:latest
   secretEnv:
   - BD_HUB_PASSWORD
   args:
@@ -10,7 +10,7 @@ steps:
   - "--username"
   - davemeurer
   - "--project"
-  - us.gcr.io/$PROJECT_ID/gcr-demo
+  - us.gcr.io/$PROJECT_ID/cloudbuild-demo
   - "--host"
   - bizdevhub.blackducksoftware.com
   - "--port"
